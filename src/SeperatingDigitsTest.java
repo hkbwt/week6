@@ -11,7 +11,7 @@ public class SeperatingDigitsTest {
     
     public static void main(String args []){
         
-        SeperatingDigits app1 = new SeperatingDigits();
+        SeparatingDigits app1 = new SeparatingDigits();
         app1.seperateDigit();
     
     }
