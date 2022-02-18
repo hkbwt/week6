@@ -7,12 +7,12 @@
  *
  * @author Danielle
  */
-public class SeperatingDigitsTest {
+public class SeparatingDigitsTest {
     
-    public static void main(String args []){
-        
+    public static void main(String args []) {
+
         SeparatingDigits app1 = new SeparatingDigits();
         app1.separateDigit();
-    
+
     }
 }
