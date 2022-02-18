@@ -13,21 +13,20 @@ public class SeparatingDigits {
     public void separateDigit() {
 
         Scanner sc = new Scanner(System.in);
+        int userNum = -1;
 
-        System.out.print("Enter an integer of more than 2 digits or a negative integer to exit: ");
-        int num = sc.nextInt();
+        do {
+            System.out.print("Enter an integer of more than 2 digits or a negative integer to exit: ");
+            userNum = sc.nextInt();
 
-        while (num > 0) {
-
-            if (num <= 99999 && num >= 1) {
-                displayDigits(num);
-            } else {
-                System.out.print("Integer needs to be within 1-99999");
+            if (userNum < 1 || userNum > 99_999) {
+                break; // break loop pls
             }
 
-            System.out.print("Enter an integer or a negative integer to exit: ");
-            num = sc.nextInt();
-        }
+            displayDigits(userNum);
+        } while (true); // Wait for user to break loop :nervous_pepe:
+
+        System.out.print("Good bye!");
     }
 
     public int quotient(int a, int b) {
@@ -43,18 +42,18 @@ public class SeparatingDigits {
         int divide = 1;
         int digit;
         var result = "";
-        for (int i = 1; i < num; i *= 10)
-            divide = 1;
 
-        while (divide >= 1) {
+        for (int i = 1; i < num; i *= 10) {
+            divide = i;
+        }
 
+        while (divide > 0) {
             digit = quotient(num, divide);
 
             result = result + " " + digit;
 
             num = remainder(num, divide);
             divide = quotient(divide, 10);
-
         }
 
         System.out.println(result);
