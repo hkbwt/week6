@@ -17,7 +17,14 @@ public class SeparatingDigits {
 
         do {
             System.out.print("Enter an integer of more than 2 digits or a negative integer to exit: ");
-            userNum = sc.nextInt();
+            try {
+                userNum = sc.nextInt();
+            } catch (Exception e) {
+                System.out.println("Try again...");
+                sc.nextLine();
+                continue;
+            }
+
 
             if (userNum < 1 || userNum > 99_999) {
                 break; // break loop pls
