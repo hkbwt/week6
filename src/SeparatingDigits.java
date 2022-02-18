@@ -16,7 +16,7 @@ public class SeparatingDigits {
         int userNum = -1;
 
         do {
-            System.out.print("Enter an integer of more than 2 digits or a negative integer to exit: ");
+            System.out.print("Enter an integer of more than 1 digits or a negative integer to exit: ");
             try {
                 userNum = Integer.parseInt(sc.nextLine());
             } catch (Exception e) {
@@ -33,8 +33,8 @@ public class SeparatingDigits {
                 System.out.println("Try again...");
                 continue;
             }
-            if (digitCount(userNum) < 3) {
-                System.out.println("Number must be an integer of more than 2 digits");
+            if (digitCount(userNum) < 2) {
+                System.out.println("Number must be an integer of more than 1 digits");
                 System.out.println("Try again...");
                 continue;
             }
