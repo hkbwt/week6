@@ -18,22 +18,31 @@ public class SeparatingDigits {
         do {
             System.out.print("Enter an integer of more than 2 digits or a negative integer to exit: ");
             try {
-                userNum = sc.nextInt();
+                userNum = Integer.parseInt(sc.nextLine());
             } catch (Exception e) {
                 System.out.println("Try again...");
-                sc.nextLine();
                 continue;
             }
 
 
-            if (userNum < 1 || userNum > 99_999) {
+            if (userNum < 1) {
                 break; // break loop pls
+            }
+            if (userNum > 99_999) {
+                System.out.println("Number must be less than 99,999");
+                System.out.println("Try again...");
+                continue;
+            }
+            if (digitCount(userNum) < 3) {
+                System.out.println("Number must be an integer of more than 2 digits");
+                System.out.println("Try again...");
+                continue;
             }
 
             displayDigits(userNum);
         } while (true); // Wait for user to break loop :nervous_pepe:
 
-        System.out.print("Good bye!");
+        System.out.println("Good bye!");
     }
 
     public int quotient(int a, int b) {
