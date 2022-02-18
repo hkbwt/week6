@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class SeparatingDigits {
 
-    public void seperateDigit() {
+    public void separateDigit() {
 
         Scanner sc = new Scanner(System.in);
 

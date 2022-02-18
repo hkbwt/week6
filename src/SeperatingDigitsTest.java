@@ -12,7 +12,7 @@ public class SeperatingDigitsTest {
     public static void main(String args []){
         
         SeparatingDigits app1 = new SeparatingDigits();
-        app1.seperateDigit();
+        app1.separateDigit();
     
     }
 }
