@@ -39,6 +39,7 @@ public class SeparatingDigits {
 
     public void displayDigits(int num) {
 
+        int numDigitCount = digitCount(num);
         int divide = 1;
         int digit;
         var result = "";
@@ -49,8 +50,14 @@ public class SeparatingDigits {
 
         while (divide > 0) {
             digit = quotient(num, divide);
+            int divideDigitCount = digitCount(divide);
 
-            result = result + " " + digit;
+            if (divideDigitCount == numDigitCount) {
+                result = Integer.toString(digit); // First digit exception
+            } else {
+                result = result + " " + digit;
+            }
+
 
             num = remainder(num, divide);
             divide = quotient(divide, 10);
@@ -58,6 +65,10 @@ public class SeparatingDigits {
 
         System.out.println(result);
 
+    }
+
+    public int digitCount(int num) {
+        return (int) (Math.log10(num) + 1);
     }
 
 }
