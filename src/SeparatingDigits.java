@@ -14,7 +14,7 @@ public class SeparatingDigits {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter an integer of more than 2 digits or a negitive integer to exit: ");
+        System.out.print("Enter an integer of more than 2 digits or a negative integer to exit: ");
         int num = sc.nextInt();
 
         while (num > 0) {
@@ -25,7 +25,7 @@ public class SeparatingDigits {
                 System.out.print("Integer needs to be within 1-99999");
             }
 
-            System.out.print("Enter an integer or a negitive integer to exit: ");
+            System.out.print("Enter an integer or a negative integer to exit: ");
             num = sc.nextInt();
         }
     }
