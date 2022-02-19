@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -7,29 +6,28 @@ import java.util.Scanner;
  */
 
 /**
- *
  * @author Danielle
  */
 public class SquareOfAsterisks {
-    
-    public void drawSqareOfAsterisks(){
-    
+
+    public void drawSquareOfAsterisks() {
+
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("Enter side or square: ");
         int side = sc.nextInt();
-        
+
         squareOfAsterisks(side);
-        
+
     }
-    
-    public void squareOfAsterisks(int side){
-        
-        for(int count = 1; count <= side* side; count++){
+
+    public void squareOfAsterisks(int side) {
+
+        for (int count = 1; count <= side * side; count++) {
             System.out.print("*");
-        
-        
-            if(count % side ==0)
+
+
+            if (count % side == 0)
                 System.out.println();
         }
     }

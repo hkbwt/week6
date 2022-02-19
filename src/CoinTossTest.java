@@ -4,17 +4,16 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class CoinTossTest {
-    
-    public static void main(String args[]){
-    
-    CoinToss app1 = new CoinToss();
-    app1.startToss();
-    
+
+    public static void main(String[] args) {
+
+        CoinToss app1 = new CoinToss();
+        app1.startToss();
+
     }
-    
-    
+
+
 }

@@ -1,4 +1,3 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,42 +7,40 @@ import java.util.Scanner;
  */
 
 /**
- *
  * @author Danielle
  */
 public class CoinToss {
-    
-    private Random randomNumbers = new Random();
-    
-    public void startToss(){
-        
+
+    private final Random randomNumbers = new Random();
+
+    public void startToss() {
+
         int heads = 0;
         int tails = 0;
-        
+
         Scanner sc = new Scanner(System.in);
         int choice;
-        do{
+        do {
             System.out.println("1. Toss the coin");
             System.out.println("2. Exit");
             System.out.println("3. Choice: ");
             choice = sc.nextInt();
-            
-            if (choice == 1){
-                if (getFlip()){
+
+            if (choice == 1) {
+                if (getFlip()) {
                     heads++;
-                }
-                else{
+                } else {
                     tails++;
                 }
                 System.out.printf("Heads: %d Tails: %d\n", heads, tails);
             }
-        }while (choice !=2);
+        } while (choice != 2);
     }
-    
-    
-    public boolean getFlip(){
-        
+
+
+    public boolean getFlip() {
+
         return randomNumbers.nextInt(2) == 1;
     }
-    
+
 }

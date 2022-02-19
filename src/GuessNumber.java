@@ -1,4 +1,3 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,69 +7,64 @@ import java.util.Scanner;
  */
 
 /**
- *
  * @author Danielle
  */
 public class GuessNumber {
-    
-     private Random randomNumbers = new Random();
-     int answer;
-    
-    public void startGame(){
-        
-        
+
+    int answer;
+    private final Random randomNumbers = new Random();
+
+    public void startGame() {
+
+
         Scanner sc = new Scanner(System.in);
-        
-        int guessNum ;
-        
+
+        int guessNum;
+
         newGame();
-        
+
         System.out.print("Guess a number or enter 0 to exit: ");
         guessNum = sc.nextInt();
-        
-        while (guessNum !=0){
+
+        while (guessNum != 0) {
             checkGuessNum(guessNum);
-            
+
             System.out.print("Guess a number or enter 0 to exit");
             guessNum = sc.nextInt();
-            
-            if (guessNum == 0){
+
+            if (guessNum == 0) {
                 System.out.printf("You gave up :(, the answer is %d\n", answer);
             }
-        
+
         }
     }
-        
-    public int getNumber(){
-    
-        return 1+ randomNumbers.nextInt(1000);
-    
+
+    public int getNumber() {
+
+        return 1 + randomNumbers.nextInt(1000);
+
     }
-    
-    
-    public void newGame(){
+
+
+    public void newGame() {
         answer = getNumber();
         System.out.println("Guess a number between 1 and 1000");
-    
+
     }
-    
-    public void checkGuessNum(int guessNum){
-        
-        if (guessNum < answer){
+
+    public void checkGuessNum(int guessNum) {
+
+        if (guessNum < answer) {
             System.out.printf("%d is to low.\n", guessNum);
-        }
-        else if ( guessNum > answer){
+        } else if (guessNum > answer) {
             System.out.printf("%d is to high.\n", guessNum);
-        }
-        else{
+        } else {
             System.out.println("Congrats, you guessed it!!!!!\n");
-            
+
             newGame();
         }
-    
-    
-    
-        
+
+
     }
-    
+
 }

@@ -4,14 +4,13 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class HypotenuseTest {
-    public static void main(String args[]){
+    public static void main(String[] args) {
         Hypotenuse app = new Hypotenuse();
         app.calculateHypotenuse();
-    
-     
+
+
     }
 }

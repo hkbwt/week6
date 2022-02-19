@@ -4,15 +4,14 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class GuessNumberTest {
-    
-     public static void main(String args[]){
-    
-    GuessNumber app1 = new GuessNumber();
-    app1.startGame();
-    
+
+    public static void main(String[] args) {
+
+        GuessNumber app1 = new GuessNumber();
+        app1.startGame();
+
     }
 }

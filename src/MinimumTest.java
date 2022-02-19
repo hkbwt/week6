@@ -4,12 +4,11 @@
  */
 
 /**
- *
  * @author Danielle
  */
-public class MinimunTest {
-    public static void main(String args[]){
-    Minimun app1 = new Minimun();
-    app1.getMin();
+public class MinimumTest {
+    public static void main(String[] args) {
+        Minimum app1 = new Minimum();
+        app1.getMin();
     }
 }

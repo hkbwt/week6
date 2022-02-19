@@ -4,15 +4,14 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class DistanceBetweenPointsTest {
-    
-    public static void main(String args[]){
-    
-    DistanceBetweenPoints app1 = new DistanceBetweenPoints();
-    app1.calculateDistance();
-    
+
+    public static void main(String[] args) {
+
+        DistanceBetweenPoints app1 = new DistanceBetweenPoints();
+        app1.calculateDistance();
+
     }
 }

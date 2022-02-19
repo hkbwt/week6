@@ -4,15 +4,14 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class EvenOddTest {
-    
-    public static void main(String args[]){
+
+    public static void main(String[] args) {
         EvenOdd EvenOdd1 = new EvenOdd();
         EvenOdd1.checkOddEven();
-    
+
     }
-    
+
 }

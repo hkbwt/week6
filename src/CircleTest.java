@@ -4,14 +4,13 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class CircleTest {
-    
-    public static void main(String args[]){
-    Circle app1 = new Circle();
-    app1.calculateCircle();
-    
-   }
+
+    public static void main(String[] args) {
+        Circle app1 = new Circle();
+        app1.calculateCircle();
+
+    }
 }

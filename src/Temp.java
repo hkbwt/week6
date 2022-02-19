@@ -4,12 +4,11 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class Temp {
-    
-    public static void main (String args[]){
+
+    public static void main(String[] args) {
 
         TempTest app1 = new TempTest();
         app1.convertTemp();

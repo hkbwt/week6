@@ -4,17 +4,15 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class Square2Test {
-    
-    public static void main(String args[]){
-        
+
+    public static void main(String[] args) {
+
         Square2 app1 = new Square2();
-        app1.drawSqareOfAsterisks();
-    
-            
-    
+        app1.drawSquareOfAsterisks();
+
+
     }
 }

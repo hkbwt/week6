@@ -4,16 +4,15 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class ReverseDigitTest {
-    
-    public static void main(String args[]){
-    
-    ReverseDigit app1 = new ReverseDigit();
-    app1.getReverseDigit();
-    
+
+    public static void main(String[] args) {
+
+        ReverseDigit app1 = new ReverseDigit();
+        app1.getReverseDigit();
+
     }
-    
+
 }

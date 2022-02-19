@@ -4,16 +4,15 @@
  */
 
 /**
- *
  * @author Danielle
  */
 public class ComputerAssistedTest {
-    
-    public static void main(String args[]){
-    
-    ComputerAssisted app1 = new ComputerAssisted();
-    app1.startQuiz();
-    
+
+    public static void main(String[] args) {
+
+        ComputerAssisted app1 = new ComputerAssisted();
+        app1.startQuiz();
+
     }
 }
 
